@@ -1,0 +1,274 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Post a Job</title>
+<!-- Name : Prasad Kasar
+PRN: 170101112002
+College: Sandip University -->
+
+    <!-- Bootstrap core CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" >
+
+
+    <style>
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      html, body {
+          height: 100%;
+      }
+
+      .jumbotron{
+        background: url('assets/images/undraw_work_time_lhoj.svg');
+        background-repeat: no-repeat;
+        background-position: right center;
+        height: 45em;
+      }  
+
+      .nav-item{
+        padding: 5px;
+      }
+      .nav-item a{
+        color: black;
+      }
+      
+      .nav-link-active{
+        color:blue !important;
+      }
+      .jumbotron-content{
+        border-radius:0 0 5px 5px;
+      }
+      .nav-pill-special{
+        border-radius:5px 5px 0 0;
+      }
+      .nav-bg {
+        background: url('assets/images/bg_1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .jumbotron-section{
+        margin-right: 50%;  
+        margin-top: 23%;
+        
+      }
+      .home-newsletter {
+      padding: 80px 0;
+        }
+
+      .home-newsletter .single {
+        max-width: 650px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        z-index: 2; 
+      }
+      .home-newsletter .single h2 {
+        font-size: 22px;
+        color: white;
+        margin-bottom: 40px; 
+      }
+      .home-newsletter .single .form-control {
+        height: 50px;
+        background: rgba(255, 255, 255, 0.6);
+        border-color: transparent;
+      }
+      .home-newsletter .single .form-control:focus {
+        box-shadow: none;
+        border-color: #243c4f; 
+      }
+      .home-newsletter .single .btn {
+        min-height: 50px; 
+        color: #fff;
+      }
+      .btn-orange{
+        background: orangered
+      }
+      .header-container{
+        height: 58%
+      }
+      .jumbotron-breadcrumb{
+        margin-left: -27%;
+      }
+      .jumbotron-breadcrumb-subheader{
+        margin-left: -21%;
+      }
+    </style>
+    <base href="http://localhost/xento_design/">
+  </head>
+  <body class="text-center">
+    <div class="container-fluid header-container" >
+      <div class="row nav-bg" >
+        <div class="col-md-12">
+          <ul class="nav nav-pills float-left p-3"> 
+            <li class="nav-item"><a><h2>JobApply</h2></a></li>
+          </ul>
+          <ul class="nav nav-pills float-right p-3"> 
+            <li class="nav-item"><a class="nav-link nav-link-active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Candidate</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item "><a class="nav-link btn-primary text-white" href="post_a_job.html">Post a Job</a></li>
+            <li class="nav-item "><a class="nav-link btn-orange text-white" href="want_a_job.html">Want a Job</a></li>
+            
+          </ul>
+
+          
+            <section class="jumbotron-section">
+                <b>
+                    <p class="jumbotron-breadcrumb text-uppercase" >
+                        Home > New Job Post
+                    </p>
+                    <h1 class="jumbotron-breadcrumb-subheader text-uppercase" >
+                        Post A Job
+                    </h1>
+                </b>  
+            </section>
+        </div>
+      </div>
+      
+    </div>
+    <div class="container-fluid" style="background-color:#f5f5f5;">
+      <div class="row">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-7 p-5" style="background-color:white;margin:7%  0 7%  0;text-align: justify">
+
+                      <form>
+                          <div class="form-group">
+                            <div>
+                              <div class="custom-controls-stacked">
+                                <div class="custom-control custom-radio">
+                                  <input name="radio" id="radio_0" type="radio" class="custom-control-input" value="plan_30days"> 
+                                  <label for="radio_0" class="custom-control-label">$500 For 30 Days</label>
+                                </div>
+                              </div>
+                              <div class="custom-controls-stacked">
+                                <div class="custom-control custom-radio">
+                                  <input name="radio" id="radio_1" type="radio" class="custom-control-input" value="plan_permonth"> 
+                                  <label for="radio_1" class="custom-control-label">$300 / Monthly Recurring</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="job_title" class="font-weight-bold">Job Title</label> 
+                            <input id="job_title" name="job_title" placeholder="eg. Professional UI/UX Designer" type="text" class="form-control">
+                          </div>
+                          <div class="form-group">
+                            <label for="company" class="font-weight-bold">Company</label> 
+                            <input id="company" name="company" placeholder="eg. Facebook, Inc." type="text" class="form-control">
+                          </div>
+                          <div class="form-group">
+                            <label class="font-weight-bold">Job Type</label> 
+                            <div>
+                              <div class="custom-controls-stacked">
+                                <div class="custom-control custom-radio">
+                                  <input name="job_type" id="job_type_0" type="radio" class="custom-control-input" value="full_time"> 
+                                  <label for="job_type_0" class="custom-control-label">Full Time</label>
+                                </div>
+                              </div>
+                              <div class="custom-controls-stacked">
+                                <div class="custom-control custom-radio">
+                                  <input name="job_type" id="job_type_1" type="radio" class="custom-control-input" value="part_time"> 
+                                  <label for="job_type_1" class="custom-control-label">Part Time</label>
+                                </div>
+                              </div>
+                              <div class="custom-controls-stacked">
+                                <div class="custom-control custom-radio">
+                                  <input name="job_type" id="job_type_2" type="radio" class="custom-control-input" value="freelance"> 
+                                  <label for="job_type_2" class="custom-control-label">Freelance</label>
+                                </div>
+                              </div>
+                              <div class="custom-controls-stacked">
+                                <div class="custom-control custom-radio">
+                                  <input name="job_type" id="job_type_3" type="radio" class="custom-control-input" value="internship"> 
+                                  <label for="job_type_3" class="custom-control-label">Internship</label>
+                                </div>
+                              </div>
+                              <div class="custom-controls-stacked">
+                                <div class="custom-control custom-radio">
+                                  <input name="job_type" id="job_type_4" type="radio" class="custom-control-input" value="temporary"> 
+                                  <label for="job_type_4" class="custom-control-label">Temporary</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="font-weight-bold" for="location">Location</label> 
+                            <input id="location" name="location" placeholder="Western City, UK" type="text" class="form-control">
+                          </div>
+                          <div class="form-group">
+                            <label class="font-weight-bold" for="job_description">Job Description</label> 
+                            <textarea id="job_description" name="job_description" cols="40" rows="5" class="form-control"></textarea>
+                          </div> 
+                          <div class="form-group">
+                            <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                          </div>
+                        </form>
+
+                  </div>
+                  <div class="col-md-4" style="margin:7%  0  7%  2%;text-align: justify">
+                      <div class="card" style=""background-color:white;border: none;">
+                          <div class="card-body">
+                            <h5 class="card-title">Contact info</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Address</h6>
+                            <p class="card-text">203 Fake St. Mountain View, San <br>Francisco, California, USA </p>
+
+                            <h6 class="card-subtitle mb-2 text-muted">Phone</h6>
+                            <p class="card-text"><a href="tel:+12323235324">+1 232 3235 324</a></p>
+
+                            <h6 class="card-subtitle mb-2 text-muted">Email Address</h6>
+                            <p class="card-text"><a href="mailto:">[email protected]</a></p>
+
+                          </div>
+                        </div>
+                        <div class="card mt-3" style="background-color:white;border: none;">
+                            <div class="card-body">
+                              <h5 class="card-title">More info</h5>
+                              <p class="card-text">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum aliquam nisi, non rhoncus magna varius sed. Mauris quis enim venenatis, efficitur odio ac, interdum metus. 
+                              </p>
+                              <button class="btn btn-primary">Learn More</button>
+                            </div>
+                          </div> 
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-primary" style="height: 38%">
+        <div class="row">
+            <div class="col-md-12 home-newsletter">
+                <div class="single">
+                    <h2>Subscribe to our Newsletter</h2>
+                  <div class="input-group">
+                         <input type="email" class="form-control" placeholder="Enter your email">
+                         <span class="input-group-btn">
+                         <button class="btn btn-theme btn-orange" type="submit">Subscribe</button>
+                         </span>
+                          </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
